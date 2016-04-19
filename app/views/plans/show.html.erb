@@ -1,0 +1,12 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @plan.name %>
+</p>
+<p>
+  <strong>Ideas list:</strong>
+  <%= render 'idea_list' %>
+</p>
+
+<%= link_to 'Edit', edit_plan_path(@plan) %> |
+<%= link_to 'Back', plans_path %>

@@ -1,0 +1,8 @@
+    		<% @ideas.each do |idea| %>
+  			<ul>
+  				<li><input type="checkbox" name ="idea_ids[]" value = "<%= idea.id %> " />
+  				<%= idea.name %>
+  				</li>
+  			</ul>
+		<% end %>
+	
